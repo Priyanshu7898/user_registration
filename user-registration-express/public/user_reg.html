@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+
+    <form action="/user_reg_submit" method="POST">
+        <label>First Name:</label>
+        <input type="text" name="firstName" required>
+        <br><br>
+
+        <label>Middle Name:</label>
+        <input type="text" name="middleName">
+        <br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br><br>
+
+        <label>Security Question:</label>
+        <select name="securityQuestion" required>
+            <option value="">Select a question</option>
+            <option value="What is your favourite colour?">What is your favourite colour?</option>
+            <option value="What is your birthplace?">What is your birthplace?</option>
+            <option value="What was your first school?">What was your first school?</option>
+        </select>
+        <br><br>
+
+        <label>Security Answer:</label>
+        <input type="text" name="securityAnswer" required>
+        <br><br>
+
+        <label>Hobbies (comma separated values):</label>
+        <input type="text" name="hobbies" placeholder="Reading, Music, Cricket">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
